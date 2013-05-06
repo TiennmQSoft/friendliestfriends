@@ -12,7 +12,6 @@
 		9C2887B11738188E00BAE903 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2887B01738188E00BAE903 /* CoreGraphics.framework */; };
 		9C2887B71738188F00BAE903 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C2887B51738188F00BAE903 /* InfoPlist.strings */; };
 		9C2887B91738188F00BAE903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2887B81738188F00BAE903 /* main.m */; };
-		9C2887BD1738188F00BAE903 /* LMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2887BC1738188F00BAE903 /* LMSAppDelegate.m */; };
 		9C2887BF1738188F00BAE903 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2887BE1738188F00BAE903 /* Default.png */; };
 		9C2887C11738188F00BAE903 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2887C01738188F00BAE903 /* Default@2x.png */; };
 		9C2887C31738188F00BAE903 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C2887C21738188F00BAE903 /* Default-568h@2x.png */; };
@@ -28,10 +27,11 @@
 		9C2887EC173818C200BAE903 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2887EB173818C200BAE903 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9C2887EE173818D000BAE903 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2887ED173818D000BAE903 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9C2887F0173818D800BAE903 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2887EF173818D800BAE903 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		9C28886B17381E7000BAE903 /* LMSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C28886A17381E7000BAE903 /* LMSLoginViewController.m */; };
 		9C28886D17381EB200BAE903 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C28886C17381EB200BAE903 /* FacebookSDK.framework */; };
 		9C28886F17381ED300BAE903 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C28886E17381ED300BAE903 /* FacebookSDKResources.bundle */; };
 		9C28887117381EDA00BAE903 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C28887017381EDA00BAE903 /* FBUserSettingsViewResources.bundle */; };
+		9C7DD08D173836CB00095E00 /* LMSTopLikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DD08C173836CB00095E00 /* LMSTopLikesViewController.m */; };
+		9C7DD08F17383A4700095E00 /* LMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DD08E17383A4700095E00 /* LMSAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,6 @@
 		9C2887B61738188F00BAE903 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C2887B81738188F00BAE903 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C2887BA1738188F00BAE903 /* MyFBLikes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFBLikes-Prefix.pch"; sourceTree = "<group>"; };
-		9C2887BB1738188F00BAE903 /* LMSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSAppDelegate.h; sourceTree = "<group>"; };
-		9C2887BC1738188F00BAE903 /* LMSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSAppDelegate.m; sourceTree = "<group>"; };
 		9C2887BE1738188F00BAE903 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9C2887C01738188F00BAE903 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9C2887C21738188F00BAE903 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -72,11 +70,13 @@
 		9C2887EB173818C200BAE903 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9C2887ED173818D000BAE903 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		9C2887EF173818D800BAE903 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		9C28886917381E7000BAE903 /* LMSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSLoginViewController.h; sourceTree = "<group>"; };
-		9C28886A17381E7000BAE903 /* LMSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSLoginViewController.m; sourceTree = "<group>"; };
 		9C28886C17381EB200BAE903 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		9C28886E17381ED300BAE903 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		9C28887017381EDA00BAE903 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		9C7DD08B173836CB00095E00 /* LMSTopLikesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSTopLikesViewController.h; sourceTree = "<group>"; };
+		9C7DD08C173836CB00095E00 /* LMSTopLikesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSTopLikesViewController.m; sourceTree = "<group>"; };
+		9C7DD08E17383A4700095E00 /* LMSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSAppDelegate.m; sourceTree = "<group>"; };
+		9C7DD09017383A4E00095E00 /* LMSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSAppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,14 +150,14 @@
 		9C2887B21738188F00BAE903 /* MyFBLikes */ = {
 			isa = PBXGroup;
 			children = (
-				9C28886917381E7000BAE903 /* LMSLoginViewController.h */,
-				9C28886A17381E7000BAE903 /* LMSLoginViewController.m */,
-				9C2887BB1738188F00BAE903 /* LMSAppDelegate.h */,
-				9C2887BC1738188F00BAE903 /* LMSAppDelegate.m */,
+				9C7DD09017383A4E00095E00 /* LMSAppDelegate.h */,
+				9C7DD08E17383A4700095E00 /* LMSAppDelegate.m */,
 				9C2887C41738188F00BAE903 /* MainStoryboard.storyboard */,
 				9C2887C71738188F00BAE903 /* LMSViewController.h */,
 				9C2887C81738188F00BAE903 /* LMSViewController.m */,
 				9C2887B31738188F00BAE903 /* Supporting Files */,
+				9C7DD08B173836CB00095E00 /* LMSTopLikesViewController.h */,
+				9C7DD08C173836CB00095E00 /* LMSTopLikesViewController.m */,
 			);
 			path = MyFBLikes;
 			sourceTree = "<group>";
@@ -309,9 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C2887B91738188F00BAE903 /* main.m in Sources */,
-				9C2887BD1738188F00BAE903 /* LMSAppDelegate.m in Sources */,
 				9C2887C91738188F00BAE903 /* LMSViewController.m in Sources */,
-				9C28886B17381E7000BAE903 /* LMSLoginViewController.m in Sources */,
+				9C7DD08D173836CB00095E00 /* LMSTopLikesViewController.m in Sources */,
+				9C7DD08F17383A4700095E00 /* LMSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +510,7 @@
 				9C2887E31738188F00BAE903 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C2887E41738188F00BAE903 /* Build configuration list for PBXNativeTarget "MyFBLikesTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				9C2887E61738188F00BAE903 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

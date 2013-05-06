@@ -7,7 +7,6 @@
 //
 
 #import "LMSAppDelegate.h"
-#import "LMSLoginViewController.h"
 #import "LMSViewController.h"
 
 @implementation LMSAppDelegate
