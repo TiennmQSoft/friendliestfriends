@@ -15,10 +15,13 @@
 {
     // Override point for customization after application launch.
     //LMSLoginViewController *loginController = [[LMSLoginViewController alloc]init];
-    
+
     LMSViewController *vc = [[LMSViewController alloc]init];
-    self.window.rootViewController = vc;
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
     
+    self.window.rootViewController = self.navigationController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

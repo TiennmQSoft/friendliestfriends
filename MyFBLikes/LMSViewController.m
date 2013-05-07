@@ -26,13 +26,21 @@
     FBLoginView *loginView = [[FBLoginView alloc] initWithReadPermissions:@[@"user_photos"]];
     loginView.frame = CGRectOffset(loginView.frame,
                                    (self.view.center.x - (loginView.frame.size.width / 2)),
-                                   (self.view.center.y - (loginView.frame.size.height / 2)));
+                                   300);
     [self.view addSubview:loginView];
     loginView.delegate = self;
     
     self.profilePic = [[FBProfilePictureView alloc] init];
     [self.profilePic setFrame:CGRectMake(20, 20, 75, 75)];
     [self.view addSubview:self.profilePic];
+    
+    // initialize button to see friendliest friends
+    self.seeFriendliestButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [self.seeFriendliestButton setFrame: CGRectMake(80, 190, 160, 40)];
+    [self.seeFriendliestButton  setTitle:@"Friendliest Friends" forState:UIControlStateNormal];
+    [self.seeFriendliestButton addTarget:self action:@selector(seeFriendliest:)
+                   forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.seeFriendliestButton];
     
 }
 
@@ -44,12 +52,10 @@
 
 #pragma mark - FBLoginDelegate Methods
 
--(void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
-    
-}
 
 -(void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
     self.profilePic.profileID = nil;
+    self.seeFriendliestButton.hidden = TRUE;
 }
 
 -(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
@@ -60,7 +66,7 @@
 
 
 //    // make a request to find friends with the most friends
-    NSString *query = @"SELECT name, friend_count FROM user WHERE uid IN " @"(SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY friend_count DESC LIMIT 10";
+    NSString *query = @"SELECT name, friend_count, pic_square, pic_big FROM user WHERE uid IN " @"(SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY friend_count DESC LIMIT 10";
     NSDictionary *queryParam =
     [NSDictionary dictionaryWithObjectsAndKeys: query, @"q", nil];
     [FBRequestConnection startWithGraphPath:@"fql" parameters:queryParam
@@ -71,19 +77,13 @@
                               if (error) {
                                   NSLog(@"Error: %@", [error localizedDescription]);
                               } else {
-                                  NSLog(@"Result: %@", result);
-                                  
                                   self.userData =
                                   (NSArray *) [result objectForKey:@"data"];
                               }
                           }];
     
-    // create a button to transition to the 
-    UIButton *seeFriendliestButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [seeFriendliestButton setFrame: CGRectMake(80, 200, 160, 40)];
-    [seeFriendliestButton  setTitle:@"Friendliest Friends" forState:UIControlStateNormal];
-    [seeFriendliestButton addTarget:self action:@selector(seeFriendliest:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:seeFriendliestButton];
+    // show transition button
+    self.seeFriendliestButton.hidden = FALSE;
     
     [self.view reloadInputViews];
     }
@@ -91,7 +91,7 @@
 -(IBAction)seeFriendliest:(id)sender {
     LMSFriendliestViewController* friendliestVC = [[LMSFriendliestViewController alloc] init];
     friendliestVC.friendliest = self.userData;
-    [self presentViewController:friendliestVC animated:NO completion:nil];
+    [self.navigationController pushViewController:friendliestVC animated:NO];
 }
 
 -(void)loginView:(FBLoginView *)loginView handleError:(NSError *)error {

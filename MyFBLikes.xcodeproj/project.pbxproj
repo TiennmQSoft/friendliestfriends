@@ -31,6 +31,7 @@
 		9C28886F17381ED300BAE903 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C28886E17381ED300BAE903 /* FacebookSDKResources.bundle */; };
 		9C28887117381EDA00BAE903 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C28887017381EDA00BAE903 /* FBUserSettingsViewResources.bundle */; };
 		9C5E0D8617387FD2002FDFCA /* LMSFriendliestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E0D8517387FD2002FDFCA /* LMSFriendliestViewController.m */; };
+		9C5E0D8917388214002FDFCA /* LMSFriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E0D8817388214002FDFCA /* LMSFriendDetailViewController.m */; };
 		9C7DD08F17383A4700095E00 /* LMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DD08E17383A4700095E00 /* LMSAppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,8 @@
 		9C28887017381EDA00BAE903 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 		9C5E0D8417387FD2002FDFCA /* LMSFriendliestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSFriendliestViewController.h; sourceTree = "<group>"; };
 		9C5E0D8517387FD2002FDFCA /* LMSFriendliestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSFriendliestViewController.m; sourceTree = "<group>"; };
+		9C5E0D8717388214002FDFCA /* LMSFriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSFriendDetailViewController.h; sourceTree = "<group>"; };
+		9C5E0D8817388214002FDFCA /* LMSFriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSFriendDetailViewController.m; sourceTree = "<group>"; };
 		9C7DD08E17383A4700095E00 /* LMSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSAppDelegate.m; sourceTree = "<group>"; };
 		9C7DD09017383A4E00095E00 /* LMSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSAppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +158,8 @@
 				9C2887C41738188F00BAE903 /* MainStoryboard.storyboard */,
 				9C2887C71738188F00BAE903 /* LMSViewController.h */,
 				9C2887C81738188F00BAE903 /* LMSViewController.m */,
+				9C5E0D8717388214002FDFCA /* LMSFriendDetailViewController.h */,
+				9C5E0D8817388214002FDFCA /* LMSFriendDetailViewController.m */,
 				9C5E0D8417387FD2002FDFCA /* LMSFriendliestViewController.h */,
 				9C5E0D8517387FD2002FDFCA /* LMSFriendliestViewController.m */,
 				9C2887B31738188F00BAE903 /* Supporting Files */,
@@ -312,6 +317,7 @@
 				9C2887C91738188F00BAE903 /* LMSViewController.m in Sources */,
 				9C7DD08F17383A4700095E00 /* LMSAppDelegate.m in Sources */,
 				9C5E0D8617387FD2002FDFCA /* LMSFriendliestViewController.m in Sources */,
+				9C5E0D8917388214002FDFCA /* LMSFriendDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

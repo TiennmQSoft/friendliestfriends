@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import "LMSAppDelegate.h"
 
 @interface LMSViewController : UIViewController <FBLoginViewDelegate, FBRequestDelegate>
 @property (strong, nonatomic) FBProfilePictureView *profilePic;
 @property (strong, nonatomic) UILabel *userNameLabel;
 @property (strong, nonatomic) NSArray* userData;
+@property (strong, nonatomic) UIButton* seeFriendliestButton;
 @end
