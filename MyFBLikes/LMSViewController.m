@@ -7,6 +7,7 @@
 //
 
 #import "LMSViewController.h"
+#import "LMSFriendliestViewController.h"
 
 @interface LMSViewController ()
 
@@ -52,13 +53,14 @@
 }
 
 -(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
+    // get the user's profile picture and name to customize the view
     self.profilePic.profileID = user.id;
     self.userNameLabel.text = [NSString stringWithFormat:
                                 @"Welcome, %@", user.first_name];
 
 
-    // make a request to find friends with the most friends
-    NSString *query = @"SELECT name, friend_count FROM user WHERE uid IN " @"(SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY friend_count DESC LIMIT 5";
+//    // make a request to find friends with the most friends
+    NSString *query = @"SELECT name, friend_count FROM user WHERE uid IN " @"(SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY friend_count DESC LIMIT 10";
     NSDictionary *queryParam =
     [NSDictionary dictionaryWithObjectsAndKeys: query, @"q", nil];
     [FBRequestConnection startWithGraphPath:@"fql" parameters:queryParam
@@ -70,31 +72,27 @@
                                   NSLog(@"Error: %@", [error localizedDescription]);
                               } else {
                                   NSLog(@"Result: %@", result);
+                                  
+                                  self.userData =
+                                  (NSArray *) [result objectForKey:@"data"];
                               }
                           }];
     
-    
-//    FBRequest* request = [[FBRequest alloc]initWithSession: FBSession.activeSession graphPath:@"me?fields=photos.fields(likes.fields(id))"];
-//    FBRequestConnection *connection = [[FBRequestConnection alloc]init];
-//    [request startWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphObject> *result, NSError* error)
-//     {
-//         if (error)
-//         {
-//             NSString* alertTitle = @"Error";
-//             NSString* alertMessage = @"Error retrieving your likes";
-//         }
-//         else
-//         {
-//             NSLog(@"Result: %@", result);
-//         }
-//         
-//         
-//        }];
-    
-    andDelegate: self;
+    // create a button to transition to the 
+    UIButton *seeFriendliestButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [seeFriendliestButton setFrame: CGRectMake(80, 200, 160, 40)];
+    [seeFriendliestButton  setTitle:@"Friendliest Friends" forState:UIControlStateNormal];
+    [seeFriendliestButton addTarget:self action:@selector(seeFriendliest:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:seeFriendliestButton];
     
     [self.view reloadInputViews];
     }
+
+-(IBAction)seeFriendliest:(id)sender {
+    LMSFriendliestViewController* friendliestVC = [[LMSFriendliestViewController alloc] init];
+    friendliestVC.friendliest = self.userData;
+    [self presentViewController:friendliestVC animated:NO completion:nil];
+}
 
 -(void)loginView:(FBLoginView *)loginView handleError:(NSError *)error {
     NSString *alertMessage, *alertTitle;

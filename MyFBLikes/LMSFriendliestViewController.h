@@ -1,5 +1,5 @@
 //
-//  LMSTopLikesViewController.h
+//  LMSFriendliestViewController.h
 //  MyFBLikes
 //
 //  Created by Lauren Shapiro on 5/6/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LMSTopLikesViewController : UIViewController
-
+@interface LMSFriendliestViewController : UITableViewController
+@property (strong, nonatomic) NSArray* friendliest;
 @end

@@ -30,7 +30,7 @@
 		9C28886D17381EB200BAE903 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C28886C17381EB200BAE903 /* FacebookSDK.framework */; };
 		9C28886F17381ED300BAE903 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C28886E17381ED300BAE903 /* FacebookSDKResources.bundle */; };
 		9C28887117381EDA00BAE903 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C28887017381EDA00BAE903 /* FBUserSettingsViewResources.bundle */; };
-		9C7DD08D173836CB00095E00 /* LMSTopLikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DD08C173836CB00095E00 /* LMSTopLikesViewController.m */; };
+		9C5E0D8617387FD2002FDFCA /* LMSFriendliestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E0D8517387FD2002FDFCA /* LMSFriendliestViewController.m */; };
 		9C7DD08F17383A4700095E00 /* LMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DD08E17383A4700095E00 /* LMSAppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -73,8 +73,8 @@
 		9C28886C17381EB200BAE903 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		9C28886E17381ED300BAE903 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		9C28887017381EDA00BAE903 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
-		9C7DD08B173836CB00095E00 /* LMSTopLikesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSTopLikesViewController.h; sourceTree = "<group>"; };
-		9C7DD08C173836CB00095E00 /* LMSTopLikesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSTopLikesViewController.m; sourceTree = "<group>"; };
+		9C5E0D8417387FD2002FDFCA /* LMSFriendliestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSFriendliestViewController.h; sourceTree = "<group>"; };
+		9C5E0D8517387FD2002FDFCA /* LMSFriendliestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSFriendliestViewController.m; sourceTree = "<group>"; };
 		9C7DD08E17383A4700095E00 /* LMSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSAppDelegate.m; sourceTree = "<group>"; };
 		9C7DD09017383A4E00095E00 /* LMSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSAppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,9 +155,9 @@
 				9C2887C41738188F00BAE903 /* MainStoryboard.storyboard */,
 				9C2887C71738188F00BAE903 /* LMSViewController.h */,
 				9C2887C81738188F00BAE903 /* LMSViewController.m */,
+				9C5E0D8417387FD2002FDFCA /* LMSFriendliestViewController.h */,
+				9C5E0D8517387FD2002FDFCA /* LMSFriendliestViewController.m */,
 				9C2887B31738188F00BAE903 /* Supporting Files */,
-				9C7DD08B173836CB00095E00 /* LMSTopLikesViewController.h */,
-				9C7DD08C173836CB00095E00 /* LMSTopLikesViewController.m */,
 			);
 			path = MyFBLikes;
 			sourceTree = "<group>";
@@ -310,8 +310,8 @@
 			files = (
 				9C2887B91738188F00BAE903 /* main.m in Sources */,
 				9C2887C91738188F00BAE903 /* LMSViewController.m in Sources */,
-				9C7DD08D173836CB00095E00 /* LMSTopLikesViewController.m in Sources */,
 				9C7DD08F17383A4700095E00 /* LMSAppDelegate.m in Sources */,
+				9C5E0D8617387FD2002FDFCA /* LMSFriendliestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

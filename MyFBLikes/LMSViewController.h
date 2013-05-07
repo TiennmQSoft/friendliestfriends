@@ -12,4 +12,5 @@
 @interface LMSViewController : UIViewController <FBLoginViewDelegate, FBRequestDelegate>
 @property (strong, nonatomic) FBProfilePictureView *profilePic;
 @property (strong, nonatomic) UILabel *userNameLabel;
+@property (strong, nonatomic) NSArray* userData;
 @end
