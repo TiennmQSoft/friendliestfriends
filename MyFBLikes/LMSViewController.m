@@ -79,13 +79,13 @@
                               } else {
                                   self.userData =
                                   (NSArray *) [result objectForKey:@"data"];
+                                  
+                                  // show transition button once data has loaded
+                                  self.seeFriendliestButton.hidden = FALSE;
                               }
                           }];
     
-    // show transition button
-    self.seeFriendliestButton.hidden = FALSE;
-    
-    [self.view reloadInputViews];
+       [self.view reloadInputViews];
     }
 
 -(IBAction)seeFriendliest:(id)sender {

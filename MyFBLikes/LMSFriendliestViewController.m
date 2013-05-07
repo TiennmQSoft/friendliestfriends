@@ -102,11 +102,10 @@
                                  objectForKey:@"pic_big"]]]];
     detailVC.friendName = [[self.friendliest objectAtIndex:indexPath.row]
                            objectForKey:@"name"];
-//    NSString *friendCount = [NSString stringWithFormat: @"%d", 45  ];
-//                             ([[self.friendliest objectAtIndex:indexPath.row]
-//                               objectForKey:@"friend_count"])
+    NSNumber *friendCount = [[self.friendliest objectAtIndex:indexPath.row]
+                              objectForKey:@"friend_count"];
     
-    detailVC.friendCount = 0;
+    detailVC.friendCount = [friendCount integerValue];
     
     [self.navigationController pushViewController:detailVC animated:YES];
     
