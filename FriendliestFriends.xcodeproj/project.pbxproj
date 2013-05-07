@@ -440,6 +440,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Desktop/facebook/facebook-ios-sdk/lib/facebook-ios-sdk\"",
 				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = FriendliestFriends;
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +461,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Desktop/facebook/facebook-ios-sdk/lib/facebook-ios-sdk\"",
 				);
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = FriendliestFriends;
 				WRAPPER_EXTENSION = app;
 			};
