@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C2887A81738188E00BAE903"
-               BuildableName = "MyFBLikes.app"
+               BuildableName = "FriendliestFriends.app"
                BlueprintName = "FriendliestFriends"
                ReferencedContainer = "container:FriendliestFriends.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C2887CE1738188F00BAE903"
-               BuildableName = "MyFBLikesTests.octest"
+               BuildableName = "FriendliestFriendsTests.octest"
                BlueprintName = "FriendliestFriendsTests"
                ReferencedContainer = "container:FriendliestFriends.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C2887A81738188E00BAE903"
-            BuildableName = "MyFBLikes.app"
+            BuildableName = "FriendliestFriends.app"
             BlueprintName = "FriendliestFriends"
             ReferencedContainer = "container:FriendliestFriends.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C2887A81738188E00BAE903"
-            BuildableName = "MyFBLikes.app"
+            BuildableName = "FriendliestFriends.app"
             BlueprintName = "FriendliestFriends"
             ReferencedContainer = "container:FriendliestFriends.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C2887A81738188E00BAE903"
-            BuildableName = "MyFBLikes.app"
+            BuildableName = "FriendliestFriends.app"
             BlueprintName = "FriendliestFriends"
             ReferencedContainer = "container:FriendliestFriends.xcodeproj">
          </BuildableReference>

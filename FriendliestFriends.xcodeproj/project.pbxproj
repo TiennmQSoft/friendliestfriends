@@ -30,6 +30,9 @@
 		9C28886D17381EB200BAE903 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C28886C17381EB200BAE903 /* FacebookSDK.framework */; };
 		9C28886F17381ED300BAE903 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C28886E17381ED300BAE903 /* FacebookSDKResources.bundle */; };
 		9C28887117381EDA00BAE903 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C28887017381EDA00BAE903 /* FBUserSettingsViewResources.bundle */; };
+		9C3F0B701738ABEA005BE3EB /* friendliestfriends.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3F0B6F1738ABEA005BE3EB /* friendliestfriends.png */; };
+		9C3F0B731738AE62005BE3EB /* welcomeloggedout.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3F0B711738AE62005BE3EB /* welcomeloggedout.png */; };
+		9C3F0B741738AE62005BE3EB /* welcomeloggedin.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3F0B721738AE62005BE3EB /* welcomeloggedin.png */; };
 		9C5E0D8617387FD2002FDFCA /* LMSFriendliestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E0D8517387FD2002FDFCA /* LMSFriendliestViewController.m */; };
 		9C5E0D8917388214002FDFCA /* LMSFriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E0D8817388214002FDFCA /* LMSFriendDetailViewController.m */; };
 		9C7DD08F17383A4700095E00 /* LMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DD08E17383A4700095E00 /* LMSAppDelegate.m */; };
@@ -74,6 +77,9 @@
 		9C28886C17381EB200BAE903 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		9C28886E17381ED300BAE903 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		9C28887017381EDA00BAE903 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		9C3F0B6F1738ABEA005BE3EB /* friendliestfriends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendliestfriends.png; sourceTree = "<group>"; };
+		9C3F0B711738AE62005BE3EB /* welcomeloggedout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcomeloggedout.png; sourceTree = "<group>"; };
+		9C3F0B721738AE62005BE3EB /* welcomeloggedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcomeloggedin.png; sourceTree = "<group>"; };
 		9C5E0D8417387FD2002FDFCA /* LMSFriendliestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSFriendliestViewController.h; sourceTree = "<group>"; };
 		9C5E0D8517387FD2002FDFCA /* LMSFriendliestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSFriendliestViewController.m; sourceTree = "<group>"; };
 		9C5E0D8717388214002FDFCA /* LMSFriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSFriendDetailViewController.h; sourceTree = "<group>"; };
@@ -154,10 +160,13 @@
 			isa = PBXGroup;
 			children = (
 				9C7DD09017383A4E00095E00 /* LMSAppDelegate.h */,
+				9C3F0B6F1738ABEA005BE3EB /* friendliestfriends.png */,
 				9C7DD08E17383A4700095E00 /* LMSAppDelegate.m */,
 				9C2887C41738188F00BAE903 /* MainStoryboard.storyboard */,
 				9C2887C71738188F00BAE903 /* LMSViewController.h */,
 				9C2887C81738188F00BAE903 /* LMSViewController.m */,
+				9C3F0B711738AE62005BE3EB /* welcomeloggedout.png */,
+				9C3F0B721738AE62005BE3EB /* welcomeloggedin.png */,
 				9C5E0D8717388214002FDFCA /* LMSFriendDetailViewController.h */,
 				9C5E0D8817388214002FDFCA /* LMSFriendDetailViewController.m */,
 				9C5E0D8417387FD2002FDFCA /* LMSFriendliestViewController.h */,
@@ -281,6 +290,9 @@
 				9C2887C61738188F00BAE903 /* MainStoryboard.storyboard in Resources */,
 				9C28886F17381ED300BAE903 /* FacebookSDKResources.bundle in Resources */,
 				9C28887117381EDA00BAE903 /* FBUserSettingsViewResources.bundle in Resources */,
+				9C3F0B701738ABEA005BE3EB /* friendliestfriends.png in Resources */,
+				9C3F0B731738AE62005BE3EB /* welcomeloggedout.png in Resources */,
+				9C3F0B741738AE62005BE3EB /* welcomeloggedin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,9 +24,7 @@
     
     // set up login view
     FBLoginView *loginView = [[FBLoginView alloc] initWithReadPermissions:@[@"user_photos"]];
-    loginView.frame = CGRectOffset(loginView.frame,
-                                   (self.view.center.x - (loginView.frame.size.width / 2)),
-                                   300);
+    loginView.frame = CGRectMake(80, 300, 160, 50);
     [self.view addSubview:loginView];
     loginView.delegate = self;
     
@@ -35,9 +33,9 @@
     [self.view addSubview:self.profilePic];
     
     // initialize button to see friendliest friends
-    self.seeFriendliestButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [self.seeFriendliestButton setFrame: CGRectMake(80, 190, 160, 40)];
-    [self.seeFriendliestButton  setTitle:@"Friendliest Friends" forState:UIControlStateNormal];
+    self.seeFriendliestButton = [[UIButton alloc]initWithFrame:CGRectMake(60, 220, 200, 50)];
+    [self.seeFriendliestButton setBackgroundImage:[UIImage imageNamed:@"friendliestfriends.png"] forState:UIControlStateNormal];
+    
     [self.seeFriendliestButton addTarget:self action:@selector(seeFriendliest:)
                    forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.seeFriendliestButton];
@@ -56,6 +54,7 @@
 -(void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
     self.profilePic.profileID = nil;
     self.seeFriendliestButton.hidden = TRUE;
+   [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"welcomeloggedout.png"]]];
 }
 
 -(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
@@ -64,8 +63,7 @@
     self.userNameLabel.text = [NSString stringWithFormat:
                                 @"Welcome, %@", user.first_name];
 
-
-//    // make a request to find friends with the most friends
+    // make a request to find friends with the most friends
     NSString *query = @"SELECT name, friend_count, pic_square, pic_big FROM user WHERE uid IN " @"(SELECT uid2 FROM friend WHERE uid1 = me()) ORDER BY friend_count DESC LIMIT 10";
     NSDictionary *queryParam =
     [NSDictionary dictionaryWithObjectsAndKeys: query, @"q", nil];
@@ -85,6 +83,9 @@
                               }
                           }];
     
+    
+        // update background
+        [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"welcomeloggedin.png"]]];
        [self.view reloadInputViews];
     }
 
