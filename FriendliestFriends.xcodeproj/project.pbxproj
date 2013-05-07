@@ -46,23 +46,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9C2887A91738188E00BAE903 /* MyFBLikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFBLikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C2887A91738188E00BAE903 /* FriendliestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendliestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2887AC1738188E00BAE903 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9C2887AE1738188E00BAE903 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C2887B01738188E00BAE903 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9C2887B41738188F00BAE903 /* MyFBLikes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyFBLikes-Info.plist"; sourceTree = "<group>"; };
+		9C2887B41738188F00BAE903 /* FriendliestFriends-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FriendliestFriends-Info.plist"; sourceTree = "<group>"; };
 		9C2887B61738188F00BAE903 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C2887B81738188F00BAE903 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9C2887BA1738188F00BAE903 /* MyFBLikes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFBLikes-Prefix.pch"; sourceTree = "<group>"; };
+		9C2887BA1738188F00BAE903 /* FriendliestFriends-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FriendliestFriends-Prefix.pch"; sourceTree = "<group>"; };
 		9C2887BE1738188F00BAE903 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9C2887C01738188F00BAE903 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9C2887C21738188F00BAE903 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9C2887C51738188F00BAE903 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9C2887C71738188F00BAE903 /* LMSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSViewController.h; sourceTree = "<group>"; };
 		9C2887C81738188F00BAE903 /* LMSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSViewController.m; sourceTree = "<group>"; };
-		9C2887CF1738188F00BAE903 /* MyFBLikesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFBLikesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C2887CF1738188F00BAE903 /* FriendliestFriendsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendliestFriendsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2887D01738188F00BAE903 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9C2887D81738188F00BAE903 /* MyFBLikesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyFBLikesTests-Info.plist"; sourceTree = "<group>"; };
+		9C2887D81738188F00BAE903 /* FriendliestFriendsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FriendliestFriendsTests-Info.plist"; sourceTree = "<group>"; };
 		9C2887DA1738188F00BAE903 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C2887DC1738188F00BAE903 /* MyFBLikesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFBLikesTests.h; sourceTree = "<group>"; };
 		9C2887DD1738188F00BAE903 /* MyFBLikesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFBLikesTests.m; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 				9C2887EB173818C200BAE903 /* libsqlite3.dylib */,
 				9C2887E9173818AE00BAE903 /* AdSupport.framework */,
 				9C2887E7173818A700BAE903 /* Accounts.framework */,
-				9C2887B21738188F00BAE903 /* MyFBLikes */,
-				9C2887D61738188F00BAE903 /* MyFBLikesTests */,
+				9C2887B21738188F00BAE903 /* FriendliestFriends */,
+				9C2887D61738188F00BAE903 /* FriendliestFriendsTests */,
 				9C2887AB1738188E00BAE903 /* Frameworks */,
 				9C2887AA1738188E00BAE903 /* Products */,
 			);
@@ -130,8 +130,8 @@
 		9C2887AA1738188E00BAE903 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C2887A91738188E00BAE903 /* MyFBLikes.app */,
-				9C2887CF1738188F00BAE903 /* MyFBLikesTests.octest */,
+				9C2887A91738188E00BAE903 /* FriendliestFriends.app */,
+				9C2887CF1738188F00BAE903 /* FriendliestFriendsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9C2887B21738188F00BAE903 /* MyFBLikes */ = {
+		9C2887B21738188F00BAE903 /* FriendliestFriends */ = {
 			isa = PBXGroup;
 			children = (
 				9C7DD09017383A4E00095E00 /* LMSAppDelegate.h */,
@@ -164,16 +164,17 @@
 				9C5E0D8517387FD2002FDFCA /* LMSFriendliestViewController.m */,
 				9C2887B31738188F00BAE903 /* Supporting Files */,
 			);
+			name = FriendliestFriends;
 			path = MyFBLikes;
 			sourceTree = "<group>";
 		};
 		9C2887B31738188F00BAE903 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C2887B41738188F00BAE903 /* MyFBLikes-Info.plist */,
+				9C2887B41738188F00BAE903 /* FriendliestFriends-Info.plist */,
 				9C2887B51738188F00BAE903 /* InfoPlist.strings */,
 				9C2887B81738188F00BAE903 /* main.m */,
-				9C2887BA1738188F00BAE903 /* MyFBLikes-Prefix.pch */,
+				9C2887BA1738188F00BAE903 /* FriendliestFriends-Prefix.pch */,
 				9C2887BE1738188F00BAE903 /* Default.png */,
 				9C2887C01738188F00BAE903 /* Default@2x.png */,
 				9C2887C21738188F00BAE903 /* Default-568h@2x.png */,
@@ -181,20 +182,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9C2887D61738188F00BAE903 /* MyFBLikesTests */ = {
+		9C2887D61738188F00BAE903 /* FriendliestFriendsTests */ = {
 			isa = PBXGroup;
 			children = (
 				9C2887DC1738188F00BAE903 /* MyFBLikesTests.h */,
 				9C2887DD1738188F00BAE903 /* MyFBLikesTests.m */,
 				9C2887D71738188F00BAE903 /* Supporting Files */,
 			);
+			name = FriendliestFriendsTests;
 			path = MyFBLikesTests;
 			sourceTree = "<group>";
 		};
 		9C2887D71738188F00BAE903 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C2887D81738188F00BAE903 /* MyFBLikesTests-Info.plist */,
+				9C2887D81738188F00BAE903 /* FriendliestFriendsTests-Info.plist */,
 				9C2887D91738188F00BAE903 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -203,9 +205,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C2887A81738188E00BAE903 /* MyFBLikes */ = {
+		9C2887A81738188E00BAE903 /* FriendliestFriends */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C2887E11738188F00BAE903 /* Build configuration list for PBXNativeTarget "MyFBLikes" */;
+			buildConfigurationList = 9C2887E11738188F00BAE903 /* Build configuration list for PBXNativeTarget "FriendliestFriends" */;
 			buildPhases = (
 				9C2887A51738188E00BAE903 /* Sources */,
 				9C2887A61738188E00BAE903 /* Frameworks */,
@@ -215,14 +217,14 @@
 			);
 			dependencies = (
 			);
-			name = MyFBLikes;
+			name = FriendliestFriends;
 			productName = MyFBLikes;
-			productReference = 9C2887A91738188E00BAE903 /* MyFBLikes.app */;
+			productReference = 9C2887A91738188E00BAE903 /* FriendliestFriends.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9C2887CE1738188F00BAE903 /* MyFBLikesTests */ = {
+		9C2887CE1738188F00BAE903 /* FriendliestFriendsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C2887E41738188F00BAE903 /* Build configuration list for PBXNativeTarget "MyFBLikesTests" */;
+			buildConfigurationList = 9C2887E41738188F00BAE903 /* Build configuration list for PBXNativeTarget "FriendliestFriendsTests" */;
 			buildPhases = (
 				9C2887CA1738188F00BAE903 /* Sources */,
 				9C2887CB1738188F00BAE903 /* Frameworks */,
@@ -234,9 +236,9 @@
 			dependencies = (
 				9C2887D51738188F00BAE903 /* PBXTargetDependency */,
 			);
-			name = MyFBLikesTests;
+			name = FriendliestFriendsTests;
 			productName = MyFBLikesTests;
-			productReference = 9C2887CF1738188F00BAE903 /* MyFBLikesTests.octest */;
+			productReference = 9C2887CF1738188F00BAE903 /* FriendliestFriendsTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +251,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Lauren Shapiro";
 			};
-			buildConfigurationList = 9C2887A41738188E00BAE903 /* Build configuration list for PBXProject "MyFBLikes" */;
+			buildConfigurationList = 9C2887A41738188E00BAE903 /* Build configuration list for PBXProject "FriendliestFriends" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -261,8 +263,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C2887A81738188E00BAE903 /* MyFBLikes */,
-				9C2887CE1738188F00BAE903 /* MyFBLikesTests */,
+				9C2887A81738188E00BAE903 /* FriendliestFriends */,
+				9C2887CE1738188F00BAE903 /* FriendliestFriendsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -334,7 +336,7 @@
 /* Begin PBXTargetDependency section */
 		9C2887D51738188F00BAE903 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C2887A81738188E00BAE903 /* MyFBLikes */;
+			target = 9C2887A81738188E00BAE903 /* FriendliestFriends */;
 			targetProxy = 9C2887D41738188F00BAE903 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -432,13 +434,13 @@
 					"\"$(SRCROOT)/../../facebook-ios-sdk/build\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyFBLikes/MyFBLikes-Prefix.pch";
-				INFOPLIST_FILE = "MyFBLikes/MyFBLikes-Info.plist";
+				GCC_PREFIX_HEADER = "MyFBLikes/FriendliestFriends-Prefix.pch";
+				INFOPLIST_FILE = "MyFBLikes/FriendliestFriends-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Desktop/facebook/facebook-ios-sdk/lib/facebook-ios-sdk\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FriendliestFriends;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -452,13 +454,13 @@
 					"\"$(SRCROOT)/../../facebook-ios-sdk/build\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MyFBLikes/MyFBLikes-Prefix.pch";
-				INFOPLIST_FILE = "MyFBLikes/MyFBLikes-Info.plist";
+				GCC_PREFIX_HEADER = "MyFBLikes/FriendliestFriends-Prefix.pch";
+				INFOPLIST_FILE = "MyFBLikes/FriendliestFriends-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Desktop/facebook/facebook-ios-sdk/lib/facebook-ios-sdk\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FriendliestFriends;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -473,8 +475,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFBLikes/MyFBLikes-Prefix.pch";
-				INFOPLIST_FILE = "MyFBLikesTests/MyFBLikesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MyFBLikesTests/FriendliestFriendsTests-Info.plist";
+				PRODUCT_NAME = FriendliestFriendsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -490,8 +492,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyFBLikes/MyFBLikes-Prefix.pch";
-				INFOPLIST_FILE = "MyFBLikesTests/MyFBLikesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MyFBLikesTests/FriendliestFriendsTests-Info.plist";
+				PRODUCT_NAME = FriendliestFriendsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -500,7 +502,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C2887A41738188E00BAE903 /* Build configuration list for PBXProject "MyFBLikes" */ = {
+		9C2887A41738188E00BAE903 /* Build configuration list for PBXProject "FriendliestFriends" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C2887DF1738188F00BAE903 /* Debug */,
@@ -509,7 +511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C2887E11738188F00BAE903 /* Build configuration list for PBXNativeTarget "MyFBLikes" */ = {
+		9C2887E11738188F00BAE903 /* Build configuration list for PBXNativeTarget "FriendliestFriends" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C2887E21738188F00BAE903 /* Debug */,
@@ -518,7 +520,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C2887E41738188F00BAE903 /* Build configuration list for PBXNativeTarget "MyFBLikesTests" */ = {
+		9C2887E41738188F00BAE903 /* Build configuration list for PBXNativeTarget "FriendliestFriendsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C2887E51738188F00BAE903 /* Debug */,
